@@ -19,7 +19,7 @@ echo 'Update success'
 
 ## Installing openbox and supporting applications
 echo "Installing openbox and supporting applications"
-apt-get install openbox lxappearance thunar obmenu nitrogen tint2 xcompmgr xfce4-power-manager git git-core geany ttf-droid -y
+apt-get install openbox lxappearance thunar obmenu nitrogen tint2 xcompmgr xfce4-power-manager git git-core geany ttf-droid gtk2-engines-murrine gtk2-engines-pixbuf gtk3-engines-unico -y
 echo "Install success with no errors =)"
 
 ## Installing compton and configuring cb-compositor
