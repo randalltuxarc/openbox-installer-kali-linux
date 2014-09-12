@@ -9,13 +9,12 @@ nitrogen --restore &
 ## Run tint2 and notifications area
 tint2 &
 xfce4-power-manager &
-pnmixer &
 
 ## run thunar daemon
 thunar --daemon &
 
 ## run compositor effects
-cb-compositor --start &
+compton &
 
 ## Detect and configure touchpad
 if egrep -iq 'touchpad' /proc/bus/input/devices;
