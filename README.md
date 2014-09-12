@@ -1,12 +1,14 @@
-Simple bash scripts for install Openbox
+Simple bash script for installer Openbox on Kali linux
 
-How to use ?
+How to use?
+Make some directory and then clone openbox-installer-kali-linux repository
+example: mkdir NEWFOLDERNAME && cd NEWFOLDERNAME && git clone https://github.com/randalltuxarc/openbox-installer-kali-linux.git && cd openbox-installer-kali-linux
 
-clone the Openbox-installer repository to your home directory
+NOTE: 
+This script is only for KALI LINUX, and make sure you run the script according to your operating system architecture.
 
-git clone https://github.com/randalltuxarc/openbox-installer-kali-linux.git && cd openbox-installer-kali-linux && chmod +x openbox-installer.sh && ./openbox-installer.sh
-ISSUE:
+example:
+If architecture 64bit then run the script openbox-installerX64.sh
+If architecture 32bit then run the script openbox-installerX86.sh
 
-This scripts is written by NOOBS! If you get some errors from this scripts please fix :)
-
-REGARDS: randalltux
+If you find bugs, please email to randalltux@gmail.com
