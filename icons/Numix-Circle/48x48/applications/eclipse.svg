@@ -1,0 +1,21 @@
+<svg width="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.546667 13.546667" height="48" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(1.13043 0 0 1.08514 -3.20838 -1095.4145)" xlink:href="#linearGradient3858" id="linearGradient3055" x1="10.407" gradientUnits="userSpaceOnUse" x2="37.677"/>
+<linearGradient id="linearGradient3858">
+<stop offset="0" style="stop-color:#fff"/>
+<stop offset="1" style="stop-color:#fff;stop-opacity:.078"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(1.10525 0 0 1.10525 -134.27874 -295.76183)" xlink:href="#linearGradient4460" id="linearGradient5737" y1="279.096" y2="268.33" gradientUnits="userSpaceOnUse" x2="0"/>
+<linearGradient id="linearGradient4460">
+<stop offset="0" style="stop-color:#4c2464"/>
+<stop offset="1" style="stop-color:#6e3490"/>
+</linearGradient>
+</defs>
+<g style="fill-rule:evenodd">
+<rect width="12.982" x=".282" y=".282" rx="6.491" height="12.982" style="opacity:.5;fill:#fff"/>
+<rect width="11.853" x=".847" y=".847" rx="5.926" height="11.853" style="fill:url(#linearGradient5737)"/>
+<rect width="8.467" x="2.54" y="2.54" rx="4.233" height="8.467" style="opacity:.75;fill:#e4a2da"/>
+</g>
+<path style="fill:#80419c" d="m 26.03125,9.875 c -5.373924,-0.021161 -10.448252,2.463283 -13.25,7.15625 -1.949916,3.385762 -2.472863,7.508075 -1.40625,11.25 1.012064,4.287727 4.125073,8.071978 8.15625,10.0625 0.02165,0.0067 0.04081,0.02464 0.0625,0.03125 0.203035,0.06187 0.459149,0.09877 0.665793,0.152195 -5.214054,-2.83619 -8.573166,-8.829105 -7.978293,-14.620945 0.642529,-6.255828 5.787573,-11.799179 12.125,-13.09375 2.058359,-0.480339 4.417681,-0.52056 6.502866,-0.160305 -0.09568,-0.04797 -0.306777,-0.137471 -0.403628,-0.183445 C 29.04253,10.089732 27.489103,9.8807406 26.03125,9.875 z" transform="scale(.28222)"/>
+<path style="fill:url(#linearGradient3055);line-height:normal;color:#000" d="M 9.3125 21.03125 C 9.2837982 21.175207 9.2433246 21.323312 9.21875 21.46875 L 38.78125 21.46875 C 38.756675 21.323312 38.716202 21.175207 38.6875 21.03125 L 9.3125 21.03125 z M 9.0625 22.8125 C 9.0511133 22.958044 9.038488 23.103292 9.03125 23.25 L 38.96875 23.25 C 38.961512 23.103292 38.948887 22.958044 38.9375 22.8125 L 9.0625 22.8125 z M 9.03125 24.6875 C 9.037873 24.833942 9.0204941 24.979707 9.03125 25.125 L 38.96875 25.125 C 38.979506 24.979707 38.962127 24.833942 38.96875 24.6875 L 9.03125 24.6875 z M 9.25 26.5625 C 9.2763406 26.716173 9.2815519 26.879241 9.3125 27.03125 L 38.6875 27.03125 C 38.718448 26.879241 38.723659 26.716173 38.75 26.5625 L 9.25 26.5625 z " transform="scale(.28222)"/>
+</svg>

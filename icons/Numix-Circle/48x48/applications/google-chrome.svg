@@ -1,0 +1,23 @@
+<svg width="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.546667 13.546667" height="48" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient id="linearGradient3923">
+<stop offset="0" style="stop-color:#fff;stop-opacity:.059"/>
+<stop offset="1" style="stop-opacity:.059"/>
+</linearGradient>
+<linearGradient xlink:href="#linearGradient3923" id="linearGradient3929" x1="-40.5" x2="41.5" gradientUnits="userSpaceOnUse"/>
+<linearGradient id="linearGradient4460">
+<stop offset="0" style="stop-color:#dedede"/>
+<stop offset="1" style="stop-color:#efefef"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(1.10525 0 0 1.10525 -134.27874 -295.76183)" xlink:href="#linearGradient4460" id="linearGradient3061" y1="279.096" y2="268.33" gradientUnits="userSpaceOnUse" x2="0"/>
+</defs>
+<g style="fill-rule:evenodd">
+<rect width="12.982" x=".282" y=".282" rx="6.491" height="12.982" style="opacity:.5;fill:#fff"/>
+<rect width="11.853" x=".847" y=".847" rx="5.926" height="11.853" style="fill:url(#linearGradient3061)"/>
+</g>
+<circle cx=".5" cy=".5" style="fill:#0e69ad" r="41" d="m 41.5,0.5 c 0,22.643675 -18.356325,41 -41,41 -22.643675,0 -41,-18.356325 -41,-41 0,-22.643675 18.356325,-41 41,-41 22.643675,0 41,18.356325 41,41 z" transform="matrix(.04841 0 0 .04841 6.74915 6.74896)"/>
+<path style="fill:#de2228" d="M 12.092918,4.1426347 A 5.9422614,5.94235 0 0 0 1.853129,3.4528831 L 4.2406451,7.5913158 A 2.6527954,2.6528349 0 0 1 6.7342712,4.1426347"/>
+<path style="fill:#388b41" d="M 1.853129,3.4528831 A 5.9422614,5.94235 0 0 0 6.3098255,12.68475 L 8.8034515,8.44023 A 2.6527954,2.6528349 0 0 1 4.2406451,7.5913158"/>
+<path style="fill:#fcd209" d="M 6.3098255,12.68475 A 5.9422614,5.94235 0 0 0 12.092918,4.1426347 l -5.3586468,0 A 2.6527954,2.6528349 0 0 1 8.8034515,8.44023"/>
+<circle cx=".5" cy=".5" style="fill:url(#linearGradient3929)" r="41" d="m 41.5,0.5 c 0,22.643675 -18.356325,41 -41,41 -22.643675,0 -41,-18.356325 -41,-41 0,-22.643675 18.356325,-41 41,-41 22.643675,0 41,18.356325 41,41 z" transform="matrix(0 .14455 .14455 0 6.70106 6.70106)"/>
+</svg>

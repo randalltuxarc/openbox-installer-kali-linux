@@ -1,0 +1,31 @@
+# This scripts is autostart program for openbox
+# Openbox autostart script
+# Coded by randalltux
+# Email: randalltux@yahoo.co.id
+
+## Set wallpaper from nitrogen
+nitrogen --restore &
+
+## Run tint2 and notifications area
+tint2 &
+xfce4-power-manager &
+pnmixer &
+
+## run thunar daemon
+thunar --daemon &
+
+## run compositor effects
+cb-compositor --start &
+
+## Detect and configure touchpad
+if egrep -iq 'touchpad' /proc/bus/input/devices;
+then
+    synclient VertEdgeScroll=1 &
+    synclient TapButton1=1 &
+fi
+
+## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
+## Adjust the values according to your preferences
+xset r rate 250 25 &
+
+## done

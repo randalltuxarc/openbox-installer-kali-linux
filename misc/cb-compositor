@@ -1,0 +1,64 @@
+#!/bin/bash
+# cb-compton
+# Edited by Randalltux
+
+RESTART_ATTEMPTS=20
+
+if ! . cb-include.cfg 2> /dev/null; then
+    echo '  Failed to locate cb-include.cfg in PATH' >&2
+    exit 1
+fi
+
+# ------------- Set xcompmgr command options -----------------------------------
+EXECXCOMP='compton'
+if glxinfo | egrep -iq 'direct rendering: yes'; then
+    EXECXCOMP+=' --vsync opengl'
+fi
+
+# Edit xcompmgr settings
+if [[ $1 = '--edit' ]]; then
+    [[ ! -f $HOME/.config/compton.conf ]] &&
+        cp '/etc/xdg/compton.conf' "$HOME/.config/compton.conf"
+    
+    if [[ -x /usr/bin/geany ]]; then
+        geany "$HOME/.config/compton.conf" &
+    else
+        gnome-terminal --command='nano "$HOME/.config/compton.conf"'
+    fi
+elif [[ $1 = '--toggle' || $1 = '--start' ]]; then # Toggle compositing with compton. 
+    # TODO why --toggle and --start act exactly the same?
+    if ! pidof compton > /dev/null; then
+        $EXECXCOMP &
+    else
+        killall compton
+    fi
+elif [[ $1 = '--restart' ]]; then
+    killall -q compton
+    for (( i=0; i < RESTART_ATTEMPTS; i++ )); do
+        pidof compton > /dev/null || # no process found! Safe to start again
+            break
+            
+        (( i == RESTART_ATTEMPTS - 1 )) && # still didn't die? Probably hangs. Force it to die!
+            killall -q -S KILL compton
+            
+        sleep 0.25
+    done
+    cb-compositor --start
+elif [[ $1 = '--watch' ]]; then
+    while inotifywait -e modify "$HOME/.config/compton.conf"; do
+        cb-compositor --restart # TODO move this to function?
+    done
+else
+    # Output Openbox menu
+    menuStart
+    if ! pidof compton > /dev/null; then
+        menuItem 'Enable Compositing' 'cb-compositor --start'
+    else
+        menuItem 'Restart Compositing' 'cb-compositor --restart'
+        menuItem 'Disable Compositing' 'cb-compositor --toggle'
+        menuSeparator
+    fi
+    menuItem 'Edit Compositing Settings' 'cb-compositor --edit'
+    menuEnd
+fi
+exit 0
